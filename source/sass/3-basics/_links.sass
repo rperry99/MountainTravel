@@ -1,8 +1,21 @@
 a
-  color: $blue
   text-decoration: none
-  outline: 0
+  opacity: 0.75
+  color: #fff
 
-  &:hover,
-  &:focus
-    color: $fuchsia
+  &:link,
+  &:visited,
+  &:hover
+    color: #fff
+    text-decoration: none
+  &:hover
+    opacity: 1
+    text-decoration: none
+
+  &.btn
+    border-radius: 4px
+    text-transform: uppercase
+    font-weight: bold
+    text-align: center
+    background-color: $blue
+    opacity: 1
