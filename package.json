@@ -1,15 +1,15 @@
 {
-    "name": "iamjesseshow-starter-project",
+    "name": "starter-project",
     "version": "1.0.0",
     "description": "Starter Project",
     "main": "index.html",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Jesse Showalter",
+    "author": "Russ Perry",
     "license": "ISC",
     "devDependencies": {
-        "browser-sync": "^2.24.4",
+        "browser-sync": "^2.7.11",
         "del": "^1.2.0",
         "gulp": "^3.9.1",
         "gulp-autoprefixer": "5.0.0",
@@ -21,7 +21,8 @@
         "gulp-sass": "^3.2.1",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-uglify": "^3.0.0",
-        "scrollreveal": "^3.4.0"
+        "scrollreveal": "^3.3.6",
+        "hoek": "^4.2.1"
     },
     "dependencies": {}
 }
