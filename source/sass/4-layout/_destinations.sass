@@ -1,0 +1,36 @@
+.destinations ul.grid li
+  height: 350px
+  padding: 20px
+  background-size: cover
+  background-position: center
+  background-clip: content-box
+.destinations ul.grid li.mtn.small img
+  max-width: 100%
+  height: auto
+
+.destinations ul.grid
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  align-content: space-around
+
+  & li.flex-item
+    background-position: center center
+    background-size: cover
+
+    &.mtn-small
+      width: 25%
+      flex-grow: 1
+    &.mtn-large
+      width: 50%
+      flex-grow: 2
+
+    &.cloudy
+      background-image: url("../img/cloudy.jpg")
+    &.silhouette
+      background-image: url("../img/silhouette.jpg")
+    &.snowy_sunset
+      background-image: url("../img/snowy_sunset.jpg")
+    &.valley
+      background-image: url("../img/valley.jpg")

@@ -357,10 +357,12 @@ hr {
     opacity: 1; }
   .hero h1 {
     font: bold 60px "Open Sans", sans-serif;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    color: white; }
   .hero h3 {
     font: normal 28px "Open Sans", sans-serif;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    color: white; }
   .hero a.btn {
     padding: 20px 46px; }
 
@@ -394,6 +396,60 @@ hr {
       font-size: 24px; }
     .hero a.btn {
       padding: 15px 40px; } }
+
+.destinations ul.grid li {
+  height: 350px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box; }
+
+.destinations ul.grid li.mtn.small img {
+  max-width: 100%;
+  height: auto; }
+
+.destinations ul.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around; }
+  .destinations ul.grid li.flex-item {
+    background-position: center center;
+    background-size: cover; }
+    .destinations ul.grid li.flex-item.mtn-small {
+      width: 25%;
+      flex-grow: 1; }
+    .destinations ul.grid li.flex-item.mtn-large {
+      width: 50%;
+      flex-grow: 2; }
+    .destinations ul.grid li.flex-item.cloudy {
+      background-image: url("../img/cloudy.jpg"); }
+    .destinations ul.grid li.flex-item.silhouette {
+      background-image: url("../img/silhouette.jpg"); }
+    .destinations ul.grid li.flex-item.snowy_sunset {
+      background-image: url("../img/snowy_sunset.jpg"); }
+    .destinations ul.grid li.flex-item.valley {
+      background-image: url("../img/valley.jpg"); }
+
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 100px 0;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+  color: #fff; }
+  header h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px; }
+  header nav {
+    display: flex;
+    margin-right: -15px; }
+    header nav li {
+      margin: 0 15px; }
 
 .flex-video {
   height: 0;
@@ -455,31 +511,3 @@ section p {
   padding: 0 20px;
   margin-bottom: 30px;
   text-align: center; }
-
-header {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 100px 0;
-  animation: 1s fadein 0.5s forwards;
-  opacity: 0;
-  color: #fff; }
-  header h2 {
-    font-family: "Quicksand", sans-serif; }
-  header nav {
-    display: flex;
-    margin-right: -15px; }
-    header nav li {
-      margin: 0 15px; }
-
-.destinations ul.grid li {
-  height: 350px;
-  padding: 20px;
-  background-size: cover;
-  background-position: center;
-  background-clip: content-box; }
-
-.destinations ul.grid li.cloudy {
-  background-image: url("../img/cloudy.jpg"); }
