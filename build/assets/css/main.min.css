@@ -212,7 +212,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   padding: 20px 60px;
-  color: black;
+  color: #111;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -395,7 +395,29 @@ hr {
     .hero h3 {
       font-size: 24px; }
     .hero a.btn {
-      padding: 15px 40px; } }
+      padding: 15px 40px; }
+  .packages ul.grid li {
+    flex-basis: 100%;
+    padding: 20px; }
+  .testimonials p.quote {
+    font-size: 18px;
+    margin: 15px; }
+  .testimonials p.author {
+    font-size: 14px; } }
+
+@media (max-width: 1000px) {
+  .contact form input {
+    flex-basis: 100%;
+    margin: 0 0 20px 0; } }
+
+@media (max-width: 1100px) {
+  footer {
+    flex-direction: column; }
+  footer p {
+    text-align: center;
+    margin-bottom: 20px; }
+  footer ul li {
+    margin: 0 8px; } }
 
 .destinations ul.grid li {
   height: 350px;
@@ -450,6 +472,61 @@ header {
     margin-right: -15px; }
     header nav li {
       margin: 0 15px; }
+
+.packages ul.grid li {
+  padding: 50px;
+  flex-basis: 50%;
+  text-align: center; }
+
+.packages ul.grid li i {
+  color: #8c9eff; }
+
+.packages ul.grid li h4 {
+  font-size: 30px;
+  margin: 25px; }
+
+.testimonials p.quote {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 40px 0 25px; }
+
+.contact form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 600px; }
+
+.contact form.btn {
+  padding: 18px 42px; }
+
+.contact form input {
+  padding: 15px;
+  margin-right: 30px;
+  font-size: 18px;
+  color: #555;
+  flex: 1; }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #607d8b;
+  color: #fff;
+  padding: 20px 0; }
+
+footer ul {
+  display: flex; }
+
+footer ul li {
+  margin-left: 16px; }
+
+footer p {
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.6;
+  align-self: center; }
 
 .flex-video {
   height: 0;
