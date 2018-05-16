@@ -396,6 +396,14 @@ hr {
       font-size: 24px; }
     .hero a.btn {
       padding: 15px 40px; }
+  .destinations ul.grid {
+    flex-direction: column;
+    width: 100%; }
+    .destinations ul.grid li.mtn-small,
+    .destinations ul.grid li.mtn-large {
+      width: 100%;
+      flex-grow: 1;
+      flex-basis: 1; }
   .packages ul.grid li {
     flex-basis: 100%;
     padding: 20px; }
