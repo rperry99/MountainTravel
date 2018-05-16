@@ -363,8 +363,6 @@ hr {
     font: normal 28px "Open Sans", sans-serif;
     margin-bottom: 40px;
     color: white; }
-  .hero a.btn {
-    padding: 20px 46px; }
 
 .hero-content-area {
   opacity: 0;
@@ -450,9 +448,17 @@ hr {
     .destinations ul.grid li.flex-item.mtn-small {
       width: 25%;
       flex-grow: 1; }
+      @media (max-width: 800px) {
+        .destinations ul.grid li.flex-item.mtn-small {
+          width: 100%;
+          flex-grow: 1; } }
     .destinations ul.grid li.flex-item.mtn-large {
       width: 50%;
       flex-grow: 2; }
+      @media (max-width: 800px) {
+        .destinations ul.grid li.flex-item.mtn-large {
+          width: 100%;
+          flex-grow: 1; } }
     .destinations ul.grid li.flex-item.cloudy {
       background-image: url("../img/cloudy.jpg"); }
     .destinations ul.grid li.flex-item.silhouette {
@@ -461,6 +467,10 @@ hr {
       background-image: url("../img/snowy_sunset.jpg"); }
     .destinations ul.grid li.flex-item.valley {
       background-image: url("../img/valley.jpg"); }
+
+@media (max-width: 800px) {
+  section.destinations {
+    padding: 0; } }
 
 header {
   position: absolute;
@@ -480,11 +490,22 @@ header {
     margin-right: -15px; }
     header nav li {
       margin: 0 15px; }
+      header nav li a {
+        padding: 5px; }
+      header nav li a:hover {
+        background-color: white;
+        border-radius: 5px;
+        color: #3f51b5; }
 
 .packages ul.grid li {
   padding: 50px;
   flex-basis: 50%;
   text-align: center; }
+  @media (max-width: 800px) {
+    .packages ul.grid li {
+      padding-left: 0;
+      padding-right: 0;
+      flex-basis: 1; } }
 
 .packages ul.grid li i {
   color: #8c9eff; }
@@ -493,11 +514,31 @@ header {
   font-size: 30px;
   margin: 25px; }
 
+@media (max-width: 800px) {
+  section.packages {
+    padding-left: 0;
+    padding-right: 0; } }
+
 .testimonials p.quote {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.5;
   margin: 40px 0 25px; }
+  @media (max-width: 800px) {
+    .testimonials p.quote {
+      font-size: 19px;
+      padding-left: 0;
+      padding-right: 0; } }
+
+@media (max-width: 800px) {
+  section.testimonials {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media (max-width: 1000px) {
+  section.testimonials {
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 .contact form {
   display: flex;
@@ -505,6 +546,11 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   width: 600px; }
+  @media (max-width: 800px) {
+    .contact form {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%; } }
 
 .contact form.btn {
   padding: 18px 42px; }
